@@ -12,7 +12,7 @@ import { GetProviderByGameType } from "@framework/game/get-provider-by-game-type
 import CmsSosmed from "@components/cms/sosmed";
 import { useDevice } from "@contexts/device-context";
 import { theme_config } from "@themes/config";
-import { useUI } from "../../contexts/ui-context";
+import { useUI } from "@contexts/ui-context";
 import { ImageHover } from "@components/ui/image-hover";
 import dynamic from "next/dynamic";
 import IconBank from "@components/icons/bank";

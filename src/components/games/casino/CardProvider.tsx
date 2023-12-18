@@ -24,7 +24,7 @@ const CardProvider = ({ name }: { name: string }) => {
       >
         <Button
           type="button"
-          // variant='darkBlue'
+          variant='darkBlue'
           className={`bg_button_detail_casino w-full rounded uppercase text-sm active:text-[13px] h-[38px] lg:h-11 font-semibold text-white`}
         >{t('text-see-detail')}</Button>
       </Link>

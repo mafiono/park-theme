@@ -5,7 +5,7 @@ import MobileNavbar from "../../../theme/mobile_navbar";
 import AppLogout from "@utils/AppLogout";
 import Header from "../../../theme/header/index";
 import { theme_config } from "@themes/config";
-import { useUI } from "../../contexts/ui-context";
+import { useUI } from "@contexts/ui-context";
 import { useQueryGetSosmed } from "@framework/cms/get-sosmed";
 import GoogleAnalytics from "@components/google-analytics";
 import * as ga from "@lib/google-analytics";
@@ -45,7 +45,7 @@ export default function MainLayout(props: Props) {
 
   useEffect(() => {
     const handleRouteChange = (url: any) => {
-      ga.pageview(url, analytics);
+      ga.pageview(url);
     };
 
     router.events.on("routeChangeComplete", handleRouteChange);
@@ -83,7 +83,7 @@ export default function MainLayout(props: Props) {
         openModal();
       }
     }
-  }, [hasPin, isPinVerified]);
+  }, [hasPin, isAuthorized, isPinVerified, isReady, openModal, setModalView]);
 
   // useEffect(() => {
   //   const pagesPathNeedVerification = ["deposits", "withdrawals", "wallet", "transaction", referral];

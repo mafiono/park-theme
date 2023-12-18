@@ -6,7 +6,7 @@ import SectionFeaturedSlot from "@components/section/featured-slot";
 import SectionFeaturedKS from "@components/section/featured-ks";
 import SliderSlot from "@components/games/slot/Slider";
 import { useDevice } from "@contexts/device-context";
-import { useUI } from "../../contexts/ui-context";
+import { useUI } from "@contexts/ui-context";
 import SliderWithBanner from "@components/games/slot/Slider_with_banner";
 
 const SliderRecentPlayed = dynamic(
@@ -31,14 +31,14 @@ const FeaturedSlot = () => {
           {isAuthorized &&
             <div className="container mx-auto">
               <SliderRecentPlayed
-                margin={device.isMobileDevice ? true : false}
+                margin={device.isMobileDevice}
               />
             </div>
           }
           <div className="container mx-auto w-full">
             <SliderSlot />
           </div>
-          {/* <SliderWithBanner /> */}
+          <SliderWithBanner />
         </>
       }
     </>

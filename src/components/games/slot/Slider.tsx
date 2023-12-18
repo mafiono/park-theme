@@ -8,7 +8,7 @@ import {
 import { useGamesQuery } from "@framework/game/get-all-games";
 import { useDevice } from "@contexts/device-context";
 import { theme_config } from "@themes/config";
-import { useUI } from "../../../contexts/ui-context";
+import { useUI } from "@contexts/ui-context";
 
 const Slider = () => {
   const query = { type: "slot" };
@@ -33,7 +33,7 @@ const Slider = () => {
           handleConfig?.theme !== 4 ? "mt-10 md:mt-[77px]" : ""
         } relative z-[1]`}
     >
-      {/* {!device.isMobileDevice ? (
+      {!device.isMobileDevice ? (
         <CarouselSwiper
           title="Slot"
           bannerImage="/images/slot/banner.png"
@@ -56,7 +56,7 @@ const Slider = () => {
           style="aspec-123/165 h-[165px] lg:aspect-225/168 lg:h-[168px]"
           type="slot"
         />
-      )} */}
+      )}
       {!device.isTabDevice ? (
         <CarouselSwiperWithBanner
           title="Slot"

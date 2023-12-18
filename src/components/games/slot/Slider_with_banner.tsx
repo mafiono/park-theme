@@ -6,7 +6,7 @@ import {
 import { useGamesQuery } from "@framework/game/get-all-games";
 import { useDevice } from "@contexts/device-context";
 import { theme_config } from "@themes/config";
-import { useUI } from "../../../contexts/ui-context";
+import { useUI } from "@contexts/ui-context";
 
 const SliderWithBanner = () => {
   const query = { type: "slot" };

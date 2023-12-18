@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import { shimmer, toBase64 } from "@components/common/image";
-import { useTranslation } from "next-i18next";
-import Image from "next/image";
-import IconPlay from "public/icons/button-play.svg";
+// import { shimmer, toBase64 } from "@components/common/image";
+// import { useTranslation } from "next-i18next";
+// import Image from "next/image";
+// import IconPlay from "public/icons/button-play.svg";
 import React, { useEffect, useState } from "react";
 import CardItemGamesBlur from "./card-item-games-blur";
 import CardItemGamesTransform from "./card-item-games-transform";

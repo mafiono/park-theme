@@ -27,7 +27,6 @@ export const useGameQuery = (options: GameQueryOptionsType) => {
         options.type,
       options,
     ],
-    fetchGame
   );
 };
 
