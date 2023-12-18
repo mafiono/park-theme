@@ -17,7 +17,7 @@ import "@fontsource/outfit/600.css";
 import "@fontsource/outfit/700.css";
 import "@fontsource/outfit/800.css";
 import "@fontsource/outfit/900.css";
-// import "../styles/globals.scss";
+import "../styles/globals.scss";
 import "../styles/scrollbar.css";
 
 // Import Swiper styles
